@@ -1,0 +1,22 @@
+brillo = for brightness control (can be installed from yay)
+
+# Shortucts
+
+brillo = shows the current brightness of the screen
+brillo -A (number) = for increasing the brightness by value
+brillo -U (number) = for decreasing the brightness by value
+
+tixati = Say no more for torrents download (can be installed from yay)
+
+ministick = for usb image writter and formatter (can be installed from yay)
+
+feh_random = for wallpaper changing features (ask brother for the details)
+
+eval "$(ssh-agent -c)" (for starting github ssh-agent)
+
+install unzip (if have any problems with lsp-installing packages
+install xclip (for any issues with copying in the clipboard)
+
+# Command to change brightness from command line (make sure that you use this command being the root user)
+
+echo (number) > /sys/class/backlight/intel_backlight/brightness
