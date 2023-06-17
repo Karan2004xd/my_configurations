@@ -144,11 +144,6 @@ _G.packer_plugins = {
     path = "/home/karan/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  nerdtree = {
-    loaded = true,
-    path = "/home/karan/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/preservim/nerdtree"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/karan/.local/share/nvim/site/pack/packer/start/nvim-cmp",
@@ -163,6 +158,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/karan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-markdown-preview"] = {
+    loaded = true,
+    path = "/home/karan/.local/share/nvim/site/pack/packer/start/nvim-markdown-preview",
+    url = "https://github.com/davidgranstrom/nvim-markdown-preview"
   },
   ["nvim-tmux-navigation"] = {
     loaded = true,

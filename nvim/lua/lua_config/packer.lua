@@ -30,13 +30,13 @@ use {
 
 use { "alexghergh/nvim-tmux-navigation" }
 use 'mfussenegger/nvim-jdtls'
-use 'https://github.com/preservim/nerdtree'
 use 'https://github.com/ryanoasis/vim-devicons'
 use 'https://github.com/haya14busa/is.vim'
 
 use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
 use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
 use 'romgrk/barbar.nvim'
+use 'davidgranstrom/nvim-markdown-preview'
 
 use {
   'VonHeikemen/lsp-zero.nvim',
