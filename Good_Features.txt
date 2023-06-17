@@ -8,9 +8,9 @@ brillo -U (number) = for decreasing the brightness by value
 
 tixati = Say no more for torrents download (can be installed from yay)
 
-ministick = for usb image writter and formatter (can be installed from yay)
+mintstick = for usb image writter and formatter (can be installed from yay)
 
-feh_random = for wallpaper changing features (ask brother for the details)
+feh_random = for wallpaper changing features (https://github.com/SumeetP96/linux-cli-tools/blob/main/feh_random.sh)
 
 eval "$(ssh-agent -c)" (for starting github ssh-agent)
 
