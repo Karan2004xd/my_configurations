@@ -20,3 +20,10 @@ install xclip (for any issues with copying in the clipboard)
 # Command to change brightness from command line (make sure that you use this command being the root user)
 
 echo (number) > /sys/class/backlight/intel_backlight/brightness
+
+# Bluetooth headset (blueman-manager)
+If sound glitches, or has bad sound quality
+
+make a config file /etc/modprobe.d/ath9k.conf
+Add the following in the config :
+options ath9k btcoex_enable=1

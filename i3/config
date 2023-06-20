@@ -59,6 +59,9 @@ bindsym Print exec --no-startup-id scrot $HOME/Pictures/screenshots/`date +%Y-%m
 gaps inner 12
 gaps outer 4
 
+# Brightness binding
+bindsym $mod+Ctrl+Up exec brillo -A 10
+
 # Mute the annoying beep sound (but this command will also mute the speaker so carefull!)
 exec_always --no-startup-id xset -b
 
@@ -235,8 +238,8 @@ bar {
                 background #523d64E0
                 separator #191919
                 #                       border          background      text
-                focused_workspace       $bgcolor        $bgcolor        $text
-                inactive_workspace      $in-bgcolor     $in-bgcolor     $text
+                focused_workspace       $in-bgcolor     $in-bgcolor     $text
+                inactive_workspace      $bgcolor        $bgcolor        $text
                 urgent_workspace        $u-bgcolor      $u-bgcolor      $text   
 
         }
