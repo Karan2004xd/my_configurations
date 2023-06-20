@@ -48,6 +48,9 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 # tiling_drag modifier titlebar
 
+# Numlock off on startup using numlockx
+exec_always --no-startup-id numlockx on
+
 # Background bindings and settings using feh
 exec_always feh --bg-fill /home/karan/Documents/my_configurations/backgrounds/horizon_by_aenami_dd7ziro.png
 bindsym $mod+Shift+w exec feh --bg-fill --randomize /home/karan/Documents/my_configurations/backgrounds
@@ -60,13 +63,14 @@ gaps inner 12
 gaps outer 4
 
 # Brightness binding
-bindsym $mod+Ctrl+Up exec brillo -A 10
+bindsym XF86MonBrightnessUp exec brillo -A 10
+bindsym XF86MonBrightnessDown exec brillo -U 10
 
-# Mute the annoying beep sound (but this command will also mute the speaker so carefull!)
+# Mute the annoying beep sound (but this command will also mute the speaker so, carefull!)
 exec_always --no-startup-id xset -b
 
 # Transparent background using picom
-exec_always picom -f
+exec_always --no-startup-id picom -b
 
 # Hide title bar
 for_window [class="^.*"] border pixel 1
@@ -75,7 +79,7 @@ for_window [class="^.*"] border pixel 1
 bindsym $mod+x exec /home/$USER/.config/i3/scripts/lock
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill

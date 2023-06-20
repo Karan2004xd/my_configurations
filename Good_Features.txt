@@ -21,9 +21,16 @@ install xclip (for any issues with copying in the clipboard)
 
 echo (number) > /sys/class/backlight/intel_backlight/brightness
 
-# Bluetooth headset (blueman-manager)
+# Bluetooth headset
 If sound glitches, or has bad sound quality
 
 make a config file /etc/modprobe.d/ath9k.conf
 Add the following in the config :
 options ath9k btcoex_enable=1
+
+# Grant permissions to control backlight
+Create a config file /etc/udev/rules.d/backlight.rules
+
+Add the following in the config file ::
+RUN+="/bin/chgrp wheel /sys/class/backlight/intel_backlight/brightness"
+RUN+="/bin/chmod g+w /sys/class/backlight/intel_backlight/brightness"

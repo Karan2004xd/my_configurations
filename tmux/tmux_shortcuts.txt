@@ -1,0 +1,30 @@
+** Note : Most of the shortucts are present in the tmux configuration file 
+
+# basic shortucts (without configurations)
+
+Ctrl-b = basic command for doing any operation in tmux
+Ctrl-b :config-file (name of the tmux config file with path) = save and reload tmux config
+
+tmux -u = starts tmux
+tmux -u new -s (name of the session) = starts new tmux session
+tmux detach = close tmux session
+tmux -u attach -t (session name) = starts the session you created
+tmux ls = shows all the created session
+
+# window shortucts (basic command key taken to be Ctrl-a)
+
+Ctrl-a c = starts new window
+Ctrl-a , = rename the window if you want
+Ctrl-a n = next window
+Ctrl-a p = previous window
+Ctrl-a w = show all open windows
+Ctrl-a (0-9) = navigate to window by number specifically
+Ctrl-a m = maximize the focused pane, by hiding other panes open in the window
+
+(Before using plugins, make sure to clone the tmux plugin manager)
+Ctrl-a Shift-i = install plugins
+
+# Tmux resurrect
+
+prefix + Ctrl-s = To save a tmux session
+prefix + Ctrl-r = To reload a saved session
