@@ -1,19 +1,8 @@
-local lsp = require('lsp-zero')
+local lsp = require('lsp-zero').preset({
+  name = 'recommended',
+  set_lsp_keymaps = true,
+  manage_nvim_cmp = true,
+  suggest_lsp_servers = true,
+})
 
-lsp.preset('recommended')
 lsp.setup()
-
-local cmp = require('cmp')
-local cmp_select = {behavior = cmp.SelectBehavior.Select}
-local cmp_mappings = lsp.defaults.cmp_mappings({
-    ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
-    ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-})
-
-lsp.set_preferences({
-    sign_icons = { }
-})
-
-lsp.setup_nvim_cmp({
-    mapping = cmp_mappings
-})

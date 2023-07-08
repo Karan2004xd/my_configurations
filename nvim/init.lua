@@ -1,1 +1,1 @@
-require("lua_config")
+require("karan_config")
