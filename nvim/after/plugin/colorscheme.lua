@@ -1,4 +1,4 @@
-require('kanagawa').setup({
+require('tokyonight').setup({
 	transparent = true,
 })
-vim.cmd("colorscheme kanagawa")
+vim.cmd("colorscheme tokyonight-night")

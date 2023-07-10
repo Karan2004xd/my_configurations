@@ -33,7 +33,7 @@ return require('packer').startup(function(use)
     }
 
     -- colorscheme kanagawa
-    use "rebelot/kanagawa.nvim"
+    use "folke/tokyonight.nvim"
 
     -- Treesitter
     use ({'nvim-treesitter/nvim-treesitter'}, {run = ':TSUpdate'})
@@ -71,6 +71,9 @@ return require('packer').startup(function(use)
     
     -- nvim-jdtls 
     use 'mfussenegger/nvim-jdtls' 
+
+    -- Indent BackLine
+    use "lukas-reineke/indent-blankline.nvim"
 
     -- Lsp Zero
     use {
